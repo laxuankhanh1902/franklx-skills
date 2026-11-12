@@ -16,7 +16,7 @@ re-encoded to H.264 by ffmpeg. The captions are logged with timestamps, so the s
 
 ## Setup (once per project)
 ```bash
-cp ~/.claude/skills/recording-web-demos/demo-kit.js <project>/demo/
+cp ${CLAUDE_SKILL_DIR}/demo-kit.js <project>/demo/
 npm install -D playwright && npx playwright install chromium
 # mp4 needs ffmpeg with libx264: brew install ffmpeg, or npm i -D ffmpeg-static, or FFMPEG=/path
 ```

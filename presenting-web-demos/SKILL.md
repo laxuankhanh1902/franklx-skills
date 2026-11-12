@@ -29,7 +29,7 @@ artifact, so nobody needs a third-party tool to open it, and it downloads as `.p
    (cluster shape, file contents) against the source before quoting them.
 3. **Screenshot the whole window, nav and header included** — it is a demo of a web UI, and the
    audience should see where in the app each claim lives. Write a spec and run
-   `NODE_PATH=<dir with playwright> node ~/.claude/skills/presenting-web-demos/shots.js spec.json out/`.
+   `NODE_PATH=<dir with playwright> node ${CLAUDE_SKILL_DIR}/shots.js spec.json out/`.
    `sel` scrolls that element to sit just under the sticky header; the shot is the 1440×820
    viewport at 2x, light theme. `crop: true` shoots the element alone — the exception, for a
    detail too small to read in a full window.

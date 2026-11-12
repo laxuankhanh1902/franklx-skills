@@ -1,0 +1,33 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "franklx-skills",
+  "owner": {
+    "name": "laxuankhanh1902",
+    "url": "https://github.com/laxuankhanh1902"
+  },
+  "metadata": {
+    "description": "Skills for Claude Code: record or present a walkthrough of any web UI"
+  },
+  "plugins": [
+    {
+      "name": "recording-web-demos",
+      "description": "Record a scripted walkthrough of any web UI as an mp4, with cursor, captions and a timed transcript (.srt / .vtt / .md)",
+      "source": "./",
+      "strict": false,
+      "skills": ["./recording-web-demos"],
+      "license": "MIT",
+      "homepage": "https://github.com/laxuankhanh1902/franklx-skills",
+      "category": "productivity"
+    },
+    {
+      "name": "presenting-web-demos",
+      "description": "Turn a walkthrough of any web UI into a slide deck: one claim per slide, real window screenshots of the running app, built as a claude.ai Slides artifact (pptx / PDF)",
+      "source": "./",
+      "strict": false,
+      "skills": ["./presenting-web-demos"],
+      "license": "MIT",
+      "homepage": "https://github.com/laxuankhanh1902/franklx-skills",
+      "category": "productivity"
+    }
+  ]
+}
